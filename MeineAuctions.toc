@@ -1,0 +1,10 @@
+## Interface: 20504
+## Title: MeineAuctions
+## Notes: Stores auctions
+## Author: Undaare
+## Version: 0.0.1
+## SavedVariables: MeineAuctionsDB
+
+embeds.xml
+
+MeineAuctions.lua
