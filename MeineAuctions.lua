@@ -20,7 +20,7 @@ end
 function MeineAuctions:AUCTION_OWNED_LIST_UPDATE()
 	self.db.char.Auctions = {}
 	for i = 1, GetNumAuctionItems("owner") do
-		local _, _, itemCount, _, _, _, _, startPrice, _, buyoutPrice, _, _, _, _, _, saleStatus, itemID =  GetAuctionItemInfo("owner", i)
+		local _, _, itemCount, _, _, _, _, startPrice, _, buyoutPrice, _, _, _, _, _, saleStatus, itemID = GetAuctionItemInfo("owner", i)
 		
 		if saleStatus and saleStatus == 1 then
 			saleStatus = true
@@ -90,8 +90,5 @@ function MeineAuctions:CHAT_MSG_SYSTEM(type, msg)
 	-- ERR_AUCTION_SOLD_S
 	if string.match(msg, "Es wurde ein Käufer für Eure Auktion gefunden:") then
 		PlaySound(SOUNDKIT.AUCTION_WINDOW_OPEN)
-	end
-	if string.match(msg, "ist jetzt offline") then
-		PlaySound(SOUNDKIT.READY_CHECK)
 	end
 end
