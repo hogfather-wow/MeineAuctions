@@ -1,0 +1,2 @@
+- Add price settings
+- Add price to tooltip
